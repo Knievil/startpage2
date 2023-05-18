@@ -1,30 +1,44 @@
 import './styles.scss';
-function showTime(){
-  var date = new Date();
-  var h = date.getHours(); // 0 - 23
-  var m = date.getMinutes(); // 0 - 59
-  var s = date.getSeconds(); // 0 - 59
-  var session = "AM";
-  
-  if(h == 0){
-      h = 12;
-  }
-  
-  if(h > 12){
-      h = h - 12;
-      session = "PM";
-  }
-  
-  h = (h < 10) ? "0" + h : h;
-  m = (m < 10) ? "0" + m : m;
-  s = (s < 10) ? "0" + s : s;
-  
-  var time = h + ":" + m + ":" + s + " " + session;
-  document.getElementById("MyClockDisplay").innerText = time;
-  document.getElementById("MyClockDisplay").textContent = time;
-  
-  setTimeout(showTime, 1000);
-  
+
+// START CLOCK SCRIPT
+
+Number.prototype.pad = function (n) {
+  for (var r = this.toString(); r.length < n; r = 0 + r);
+  return r;
+};
+
+function updateClock() {
+  var now = new Date();
+  var milli = now.getMilliseconds(),
+    sec = now.getSeconds(),
+    min = now.getMinutes(),
+    hou = now.getHours(),
+    mo = now.getMonth(),
+    dy = now.getDate(),
+    yr = now.getFullYear();
+  var months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ];
+  var tags = ['mon', 'd', 'y', 'h', 'm', 's', 'mi'],
+    corr = [months[mo], dy, yr, hou.pad(2), min.pad(2), sec.pad(2), milli];
+  for (var i = 0; i < tags.length; i++)
+    document.getElementById(tags[i]).firstChild.nodeValue = corr[i];
 }
 
-showTime();
+function initClock() {
+  updateClock();
+  window.setInterval('updateClock()', 1);
+}
+
+// END CLOCK SCRIPT
