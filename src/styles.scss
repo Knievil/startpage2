@@ -30,22 +30,13 @@
   float: left;
 }
 
-.time {
-  color: blue;
-  background-color: #333;
-  width: 200px;
-  height: 200px;
-  padding: 20px;
-}
-#timedate {
-  font: small-caps lighter 43px/150% 'Segoe UI', Frutiger, 'Frutiger Linotype',
-    'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
-  text-align: left;
-  width: 50%;
-  margin-bottom: 10%;
-  color: #fff;
-  border-left: 3px solid #ed1f24;
-  padding: 20px;
+#clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100vw - 4px);
+  max-width: 300px;
 }
 
 /* navbar stufz */
