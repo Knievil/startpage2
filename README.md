@@ -1,3 +1,4 @@
 # startpage2
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/bootstrap-5-qezg51)
+this is my homepage :>>>>>
+i uh wrote it on stackblitz beacuse I am on chrome os (AGHHH)
