@@ -30,12 +30,22 @@
   float: left;
 }
 
-.clock {
+.time {
   color: blue;
   background-color: #333;
   width: 200px;
   height: 200px;
   padding: 20px;
+}
+.clock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #17d4fe;
+  font-size: 60px;
+  font-family: Orbitron;
+  letter-spacing: 7px;
 }
 
 /* navbar stufz */
