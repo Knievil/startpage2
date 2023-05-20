@@ -9,14 +9,15 @@ $= joke
 -->
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="icon" href="" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/x-icon" href="icon.png">
   <script src="main.js"></script>
+  <link rel="stylesheet" href="src/styles.css">
   <title>Homepage</title>
 </head>
 
-<body onLoad="initClock()" class="p-4">
+<body onload="initClock()" class="p-4">
   <div class="header">
     <h1><strong>Welcome Home</strong></h1>
   </div>
@@ -31,8 +32,7 @@ $= joke
     <div class="rss">
       <script src="//rss.bloople.net/?url=https%3A%2F%2Fwww.erininthemorning.com%2Ffeed&showtitle=false&type=js">
       </script>
-      <p>#</p>
-      <!-- simple feed scrape from feedbro/ ?tiny tiny feed?-->
+      <!-- simple feed scrape it only grabs from erin ?custom xml?-->
     </div>
     <div class="shortcuts">
       <p>#</p>
@@ -40,7 +40,6 @@ $= joke
     </div>
     <div id="clock"></div>
     <!-- DD/MM/YY + unix time + ?seasons?-->
-  </div>
   </div>
 </body>
 
