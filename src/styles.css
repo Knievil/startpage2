@@ -1,14 +1,8 @@
-// $primary: #276fc2;
-// $secondary: #e8d21d;
-// $border-radius: 1px;
-
-@import '../node_modules/bootstrap/scss/bootstrap';
-
 .header {
   color: red;
   font-family: 'Times New Roman', Times, serif;
   background-color: #333;
-  padding: 28px 32px;
+  padding: 20px 30px;
 }
 /* container tingz */
 .rss {
@@ -37,6 +31,8 @@
   transform: translate(-50%, -50%);
   width: calc(100vw - 4px);
   max-width: 300px;
+  background-color: #333;
+  color: blue;
 }
 
 /* navbar stufz */
