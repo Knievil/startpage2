@@ -3,8 +3,12 @@
   font-family: 'Times New Roman', Times, serif;
   background-color: #333;
   padding: 20px 30px;
+  border-bottom: darkgreen;
+  border: 5px;
 }
 /* container tingz */
+
+/*MAIN PAGE*/
 .rss {
   color: blue;
   background-color: #333;
@@ -34,6 +38,17 @@
   background-color: #333;
   color: blue;
 }
+/*FUN*/
+
+
+/*ANALYTICS*/
+
+.containers {
+  color: blue;
+  background-color: #333;
+  font-family: monospace;
+}
+
 
 /* navbar stufz */
 ul {
@@ -59,4 +74,7 @@ li a {
 
 li a:hover {
   background-color: #111;
+}
+.active {
+  font-display: underline;
 }
