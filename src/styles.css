@@ -23,6 +23,12 @@ h2 {
   text-decoration: dashed;
 }
 
+.cat {
+  height: 350px;
+  width: 350px;
+  background-color: #141414;
+  float: left;
+}
 
 /* container tingz */
 
