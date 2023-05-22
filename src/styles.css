@@ -1,17 +1,34 @@
+body {
+  background-color: #1b1b1b;
+}
 .header {
-  color: red;
-  font-family: 'Times New Roman', Times, serif;
-  background-color: #333;
-  padding: 20px 30px;
+  padding: 5px 20px;
   border-bottom: darkgreen;
   border: 5px;
+  text-shadow: black;
+  background-color: #121212;
+  font-size: larger;
 }
+
+p {
+  color: #f80107;
+  font-family: monospace monospace;
+}
+h1 {
+  color: #f80107;
+  font-family: monospace monospace;
+}
+h2 {
+  color: #229511;
+  text-decoration: dashed;
+}
+
+
 /* container tingz */
 
 /*MAIN PAGE*/
 .rss {
-  color: blue;
-  background-color: #333;
+  background-color: #141414;
   width: 450px;
   height: 500px;
   padding: 20px;
@@ -20,32 +37,20 @@
 }
 
 .shortcuts {
-  color: blue;
-  background-color: #333;
+  background-color: #141414;
   width: 450px;
   height: 450px;
   padding: 20px;
   float: left;
 }
 
-#clock {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: calc(100vw - 4px);
-  max-width: 300px;
-  background-color: #333;
-  color: blue;
-}
 /*FUN*/
 
 
 /*ANALYTICS*/
 
 .containers {
-  color: blue;
-  background-color: #333;
+  background-color: #141414;
   font-family: monospace;
 }
 
@@ -56,7 +61,8 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #121212;
+ 
 }
 
 li {
@@ -65,15 +71,15 @@ li {
 
 li a {
   display: block;
-  color: red;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif; 
+  color: #f80107;
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: black;
 }
 .active {
   font-display: underline;
