@@ -16,5 +16,6 @@ function fetchImage() {
           })
           .catch((error) => console.error(error));
       }
+      const button = document.getElementById('fetch-image-button');
       button.addEventListener("click", fetchImage);
-            const button = document.getElementById('fetch-image-button');
+            
