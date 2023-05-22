@@ -12,10 +12,11 @@ function fetchImage() {
             const imageElement = document.createElement("img");
             imageElement.src = imageUrl;
             const container = document.getElementById("image-container");
-            container.appendChild(imageElement);
+            container.appendChild(imageElement);      
+            const button = document.getElementById('fetch-image-button');
           })
           .catch((error) => console.error(error));
       }
-      const button = document.getElementById('fetch-image-button');
+
       button.addEventListener("click", fetchImage);
             
