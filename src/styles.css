@@ -1,105 +1,106 @@
 body {
-  background-color: #1b1b1b;
+	background-color: #1b1b1b;
 }
 .header {
-  padding: 5px 20px;
-  border-bottom: darkgreen;
-  border: 5px;
-  text-shadow: black;
-  background-color: #121212;
-  font-size: larger;
+	padding: 5px 20px;
+	border-bottom: darkgreen;
+	border: 5px;
+	text-shadow: black;
+	background-color: #121212;
+	font-size: larger;
 }
 
 p {
-  color: #f80107;
-  font-family: monospace monospace;
+	color: #f80107;
+	font-family: monospace monospace;
 }
 h1 {
-  color: #f80107;
-  font-family: monospace monospace;
+	color: #f80107;
+	font-family: monospace monospace;
 }
 h2 {
-  color: #229511;
-  text-decoration: dashed;
+	color: #229511;
+	text-decoration: dashed;
 }
 
 .cat {
-  height: 350px;
-  width: 350px;
-  background-color: #141414;
-  float: left;
+	height: 350px;
+	width: 350px;
+	background-color: #141414;
+	float: left;
 }
 
 /* container tingz */
 
 /*MAIN PAGE*/
 .rss {
-  background-color: #141414;
-  width: 450px;
-  height: 500px;
-  padding: 20px;
-  float: right;
-  overflow: scroll;
-  color: #5ab64c;
+	background-color: #141414;
+	width: 450px;
+	height: 500px;
+	padding: 20px;
+	float: right;
+	overflow: scroll;
+	color: #5ab64c;
 }
 
 .shortcuts {
-  background-color: #141414;
-  width: 450px;
-  height: 450px;
-  padding: 20px;
-  float: left;
+	background-color: #141414;
+	width: 450px;
+	height: 450px;
+	padding: 20px;
+	float: left;
 }
 
 /*FUN*/
-
+.cat {
+	width: 500px;
+	height: fit-content;
+}
 
 /*ANALYTICS*/
 
 .containers {
-  background-color: #141414;
-  font-family: monospace;
+	background-color: #141414;
+	font-family: monospace;
 }
-
 
 /* navbar stufz */
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #121212;
- 
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #121212;
 }
 
 li {
-  float: left;
-  color: #229511;
+	float: left;
+	color: #229511;
 }
 
 li a {
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: 'Times New Roman', Times, serif; 
-  color: #f80107;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: 'Times New Roman', Times, serif;
+	color: #f80107;
 }
 
 li a:hover {
-  background-color: black;
+	background-color: black;
 }
 .active {
-  font-display: underline;
+	font-display: underline;
 }
 
 a:link {
-  color: #229511;
+	color: #229511;
 }
 
 a:visited {
-  color: darkgreen;
+	color: darkgreen;
 }
 a:hover {
-  color: greenyellow;
+	color: greenyellow;
 }
