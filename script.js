@@ -1,22 +1,14 @@
-function fetchImage() {
-        fetch("https://cataas.com/cat", {
-          method: "GET",
-          headers: {
-            "x-rapidapi-key": apiKey,
-            "x-rapidapi-host": "https://cataas.com/cat",
-          },
-        })
-          .then((response) => response.blob())
-          .then((blob) => {
-            const imageUrl = URL.createObjectURL(blob);
-            const imageElement = document.createElement("img");
-            imageElement.src = imageUrl;
-            const container = document.getElementById("image-container");
-            container.appendChild(imageElement);      
-            const button = document.getElementById('fetch-image-button');
-          })
-          .catch((error) => console.error(error));
-      }
+const api_url = 'https://wttr.in/?format=j1';
 
-      button.addEventListener("click", fetchImage);
-            
+async function getWeather() {
+	const response = await fetch(api_url);
+
+	const data = await response.json();
+
+	const weather = data.current_condition[0];
+
+	let temp = weather.temp_C;
+
+	document.getElementById('temp').innerHTML = 'temp:' + temp;
+}
+getWeather();
