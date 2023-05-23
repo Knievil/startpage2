@@ -46,11 +46,16 @@ h2 {
 
 /*FUN*/
 .cat {
-	width: 500px;
-	height: fit-content;
+	width: 350px;
+	height: 350px;
 	color: #229511;
 	background-color: #141414;
 	border: #229511;
+}
+.imgbox {
+	width: fit-content;
+	height: fit-content;
+	background-color: inherit;
 }
 
 /*ANALYTICS*/
