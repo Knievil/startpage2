@@ -95,3 +95,10 @@ li a:hover {
 a:link {
   color: #229511;
 }
+
+a:visited {
+  color: darkgreen;
+}
+a:hover {
+  color: greenyellow;
+}
