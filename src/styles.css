@@ -55,6 +55,9 @@ h2 {
 .cat {
 	width: 500px;
 	height: fit-content;
+	color: #229511;
+	background-color: #121212;
+	border: #229511;
 }
 
 /*ANALYTICS*/
