@@ -56,29 +56,33 @@ fetch(url, {
   });
 
 
-  // weather //
+ // locate //
+ function geoFindMe() {
+  const status = document.querySelector("#status");
+  const mapLink = document.querySelector("#map-link");
 
-  function changeWeather () {
-    var input = document.getElementById('weather-input');
-    var img = document.getElementById('weather-img');
-    img.src =
-        'https://wttr.in/' + input.value +
-        '_' + weatherOptions
-        + '.png';
-    img.alt = weatherImgAlt + input.value;
-    input.value = '';
+  mapLink.href = "";
+  mapLink.textContent = "";
+
+  function success(position) {
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+
+    status.textContent = "";
+    mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
+    mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
+  }
+
+  function error() {
+    status.textContent = "Unable to retrieve your location";
+  }
+
+  if (!navigator.geolocation) {
+    status.textContent = "Geolocation is not supported by your browser";
+  } else {
+    status.textContent = "Locating…";
+    navigator.geolocation.getCurrentPosition(success, error);
+  }
 }
 
-document.getElementById('weather-btn').onclick = function () {
-    changeWeather();
-}
-
-document.getElementById('weather-form').onkeypress = function(event) {
-    if (event.keyCode === 13) {
-      event.preventDefault();
-      changeWeather();
-    }
-}
-
-var weatherOptions = '0pq_transparency=200_lang=en';
-var weatherImgAlt = 'Current weather in ';
+document.querySelector("#find-me").addEventListener("click", geoFindMe);
