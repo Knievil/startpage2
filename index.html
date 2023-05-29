@@ -1,76 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-	<!-- 
-COMMENT KEY
-?= unsure if i will add
-!= work on this next
-$= joke
-#= placeholder
--->
+<html
+    lang="en">
+    <!-- 
+        COMMENT KEY
+        ?= unsure if i will add
+        != work on this next
+        $= joke
+        #= placeholder
+        -->
 
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<link rel="icon" type="image/x-icon" href="icon.png" />
-		<script src="script.js"></script>
-		<link rel="stylesheet" href="src/styles.css" />
-		<title>Feed</title>
-	</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" type="image/x-icon" href="icon.png">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="src/styles.css">
+        <title>Feed</title>
+    </head>
 
-	<body>
-		<div class="header">
-			<h1><strong>Welcome Home</strong></h1>
-		</div>
-		<div class="navbar">
-			<ul>
-				<li>
-					<a class="active" a href="index.html"><h2>Feed</h2></a>
-				</li>
-				<li>
-					<a href="analytics.html"><h2>Analytics</h2></a>
-				</li>
-				<li>
-					<a href="fun.html"><h2>Fun</h2></a>
-				</li>
-			</ul>
-		</div>
-		<div class="containers">
-			<div class="rss">
-				<script src="//rss.bloople.net/?url=https://www.erininthemorning.com%2Ffeed&type=js"></script>
-				<!-- simple feed scrape it only grabs from erin ?custom xml?-->
-			</div>
-			<div class="shortcuts">
-				<ul>
-					<li><a href="https://www.youtube.com" alt="youtube">YT</a></li>
-					<li><a href="https://www.vaush.gg/live" alt="vaush">vaush</a></li>
-					<li><a href="https://neocities.org" alt="neocities">neocities</a></li>
-					<li>
-						<a href="https://knievilzone.neocities.org" alt="knievilzone"
-							>knievilzone</a
-						>
-					</li>
-					<li><a href="https://tetr.io/" alt="tetrio">tetrio</a></li>
-					<li><a href="https://www.roblox.com/" alt="roblox">roblox</a></li>
-					<li>
-						<a href="https://www.deviantart.com/knievilkangaroo" alt="deviantart">
-							deviantart</a
-						>
-					</li>
-					<li><a href="https://github.com" alt="github">github</a></li>
-				</ul>
-				<!-- bookmarks with icons and ?groups? -->
-			</div>
-			<div class="date-time">
-				<button id="find-me">Show my location</button><br />
-				<p id="status"></p>
-				<a id="map-link" target="_blank"></a>
-				<button id="find-me">Show my location</button><br />
-				<p id="status"></p>
-				<a id="map-link" target="_blank"></a>
-			</div>
-		</div>
-		<div class="footer">
-			<p>#</p>
-		</div>
-	</body>
+    <body>
+        <div class="header">
+            <h1>
+                <strong>Welcome Home</strong>
+            </h1>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a class="active" a href="index.html"><h2>Feed</h2></a></li>
+                <li><a href="html/analytics.html"><h2>Analytics</h2></a></li>
+                <li><a href="html/fun.html"><h2>Fun</h2></a></li>
+            </ul>
+        </div>
+        <div class="containers">
+            <div class="rss">
+                <script src="//rss.bloople.net/?url=https://www.erininthemorning.com%2Ffeed&type=js"></script>
+                <!-- simple feed scrape it only grabs from erin ?custom xml?-->
+            </div>
+            <div class="shortcuts">
+                <ul>
+                    <li><a href="https://www.youtube.com" alt="youtube">YT</a></li>
+                    <li><a href="https://www.vaush.gg/live" alt="vaush">vaush</a></li>
+                    <li><a href="https://neocities.org" alt="neocities">neocities</a></li>
+                    <li><a href="https://knievilzone.neocities.org" alt="knievilzone">knievilzone</a></li>
+                    <li><a href="https://tetr.io/" alt="tetrio">tetrio</a></li>
+                    <li><a href="https://www.roblox.com/" alt="roblox">roblox</a></li>
+                    <li><a href="https://www.deviantart.com/knievilkangaroo" alt="deviantart">deviantart</a></li>
+                    <li><a href="https://github.com" alt="github">github</a></li>
+                </ul>
+                <!-- bookmarks with icons and ?groups? -->
+            </div>
+            <div class="footer">
+                <p>#</p>
+            </div>
+        </div>
+    </body>
 </html>
+
